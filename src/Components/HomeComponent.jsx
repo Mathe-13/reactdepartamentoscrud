@@ -19,6 +19,14 @@ export default class HomeComponent extends Component {
         })
 
     }
+
+    deleteDepartamento = (idDepartamento) => {
+        this.service.deleteDepartamento(idDepartamento).then((result) => {
+            this.loadDepartamentos();
+        })
+    }
+
+
     componentDidMount = () => {
         this.loadDepartamentos();
     }
@@ -42,6 +50,8 @@ export default class HomeComponent extends Component {
                                     <td>{dept.nombre}</td>
                                     <td>{dept.localidad}</td>
                                     <td>
+                                        <button className='btn btn-danger'
+                                            onClick={() => { this.deleteDepartamento(dept.numero) }}>Delete</button>
                                         <NavLink className="btn btn-info"
                                             to={"/update/" + dept.numero
                                                 + "/" + dept.nombre
