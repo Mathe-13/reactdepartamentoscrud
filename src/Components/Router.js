@@ -6,6 +6,7 @@ import CreateDepartamento from './CreateDepartamento'
 import UpdateDepartamento from './UpdateDepartamento'
 import CreateDepartamentoOtro from './CreateDepartamentoOtro'
 import DeleteDepartamento from './DeleteDepartamento'
+import HospitalMultiples from './HospitalMultiples'
 
 export default class Router extends Component {
     render() {
@@ -27,6 +28,7 @@ export default class Router extends Component {
                     <Route path="/createotro" element={<CreateDepartamentoOtro />} />
                     <Route path="/update/:id/:nombre/:localidad" element={<UpdateDepartamentoElement />} />
                     <Route path="/delete/:id" element={<DeleteDepartamentoElement />} />
+                    <Route path='/hospitales' element={<HospitalMultiples />} />
                 </Routes>
             </BrowserRouter>
         )

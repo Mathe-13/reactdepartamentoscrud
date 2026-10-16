@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import loading from './../assets/loading.png';
-import ServiceDepartamentos from '../ServiceDepartamentos';
+import ServiceDepartamentos from '../Service/ServiceDepartamentos';
 import { NavLink } from 'react-router-dom';
 
 export default class HomeComponent extends Component {

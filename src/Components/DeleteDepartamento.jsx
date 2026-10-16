@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Navigate, NavLink } from 'react-router-dom';
-import ServiceDepartamentos from '../ServiceDepartamentos';
+import ServiceDepartamentos from '../Service/ServiceDepartamentos';
 import loading from './../assets/loading.png';
 
 export default class DeleteDepartamento extends Component {

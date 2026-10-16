@@ -1,5 +1,5 @@
 import axios from 'axios';
-import Global from './Global';
+import Global from '../Global';
 
 export default class ServiceDepartamentos {
     getDepartamentos() {
@@ -51,5 +51,7 @@ export default class ServiceDepartamentos {
         let request = "api/departamentos/" + idDepartamento;
         return axios.delete(url + request);
     }
+
+
 
 }

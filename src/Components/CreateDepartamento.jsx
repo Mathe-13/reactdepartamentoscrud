@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ServiceDepartamentos from '../ServiceDepartamentos'
+import ServiceDepartamentos from '../Service/ServiceDepartamentos'
 import { Navigate } from 'react-router-dom';
 
 export default class CreateDepartamento extends Component {
